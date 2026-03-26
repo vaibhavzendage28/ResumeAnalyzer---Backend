@@ -9,7 +9,7 @@ app.use(express.json()); // Middleware to parse JSON bodies
 app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded bodies
 app.use(cookieParser()); // Middleware to parse cookies
 app.use(cors({
-    origin: "http://localhost:5173", // Allowing requests from this origin
+    origin: "resume-analyzer-frontend-pof8ork7k-vaibhavzendage28s-projects.vercel.app", // Allowing requests from this origin
     credentials: true, // Allowing cookies to be sent with requests
 }))
 
