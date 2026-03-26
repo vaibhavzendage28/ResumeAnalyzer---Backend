@@ -13,6 +13,10 @@ app.use(cors({
     credentials: true, // Allowing cookies to be sent with requests
 }))
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
 // Importing and using the authentication routes
 const authRouter = require('./routes/auth.routes');
 app.use('/api/auth', authRouter);
