@@ -119,7 +119,7 @@ const loginUser = async (req, res) => {
     res.cookie('token', token, {
       httpOnly: true, // Cookie is only accessible by the web server
       secure: process.env.NODE_ENV === 'production', // Cookie is only sent over HTTPS in production
-      sameSite: 'strict', // Cookie is not sent with cross-site requests
+      sameSite: 'none', // Cookie is not sent with cross-site requests
       maxAge: 24 * 60 * 60 * 1000, // Cookie expires after 1 day
     });
 
@@ -152,7 +152,7 @@ const logoutUser = async (req, res) => {
     res.clearCookie('token', {
       httpOnly: true, // Cookie is only accessible by the web server
       secure: process.env.NODE_ENV === 'production', // Cookie is only sent over HTTPS in production
-      sameSite: 'strict', // Cookie is not sent with cross-site requests
+      sameSite: 'none', // Cookie is not sent with cross-site requests
     });
 
     // Return a success response
