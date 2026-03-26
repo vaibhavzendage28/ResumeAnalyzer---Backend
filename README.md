@@ -220,6 +220,19 @@ The API returns standardized error responses:
 
 ## 📦 Deployment
 
+### Live Deployment
+
+The backend is live and deployed on **Render**:
+
+🔗 **API URL**: https://resumeanalyzer-backend-lpjc.onrender.com
+
+**Available Endpoints:**
+
+- Authentication: `https://resumeanalyzer-backend-lpjc.onrender.com/api/auth`
+- Interview Reports: `https://resumeanalyzer-backend-lpjc.onrender.com/api/interview`
+
+### Deployment Instructions
+
 For production deployment:
 
 1. Set `NODE_ENV=production`
@@ -228,7 +241,7 @@ For production deployment:
 4. Configure Google GenAI API credentials
 5. Deploy using:
    - Docker containers
-   - Vercel, Heroku, AWS, or similar cloud platforms
+   - Render, Vercel, Heroku, AWS, or similar cloud platforms
    - Dedicated Node.js hosting
 
 ## 🤝 Contributing
@@ -252,6 +265,10 @@ This project is licensed under the ISC License.
 - [ ] Support for multiple file formats (DOCX, TXT)
 - [ ] Advanced analytics dashboard
 - [ ] Interview simulation with video recording
+
+## 👤 Author
+
+**Vaibhav Zendage**
 
 ---
 
